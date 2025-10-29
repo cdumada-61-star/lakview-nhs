@@ -2,8 +2,8 @@ import React from 'react';
 
 function Contact() {
   return (
-    <main>
-      <section >
+    <main className="pt-0 mt-0">
+      <section className="pt-0 mt-0">
         <div>
           <div className="row gx-4 gx-lg-5 justify-content-center">
             <div className="col-lg-8 col-xl-6 text-center">
