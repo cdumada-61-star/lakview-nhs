@@ -11000,4 +11000,7 @@ header.masthead h1, header.masthead .h1 {
 }
 main.page-center {
   padding-top: 0.5rem; /* ensure main content doesn't sit under nav */
+  position: relative;
+  top:auto;
+  z-index:1000;
 }

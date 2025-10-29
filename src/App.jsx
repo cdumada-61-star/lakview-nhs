@@ -12,8 +12,8 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className="px-10 mx-auto my-4">
-      <nav className="top-nav">
+    <div className="px-0 mx-auto my-0">
+      <nav className="top-nav mt-4">
         <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> | <Link to="/events">Events</Link> | <Link to="/officers">Officers</Link>
       </nav>
     </div>

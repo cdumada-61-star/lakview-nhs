@@ -1,46 +1,38 @@
 import React from 'react';
+import induction from '../../assets/induction.jpg';
+import FMSC from '../../assets/FMSC.jpg';
 
 function Events(){
     return (
-            <section class="page-section" id="services">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">At Your Service</h2>
-                <hr class="divider" />
-                <h4 class="text-center mt-1">LakeView NHS's Service Events</h4>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Sturdy Themes</h3>
-                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+         
+            <div className="container mt-0 pt-0">
+                <h2 className="text-center mt-0">At Your Service</h2>
+                <hr className="divider"/>
+                <h4 className="text-center mt-1">LakeView NHS's Events</h4>
+
+                {/* add vertical gutters with gy-4, and ensure columns are flex containers */}
+                <div className="row gx-4 gx-lg-5 gy-4">
+                    <div className="col-lg-6 col-md-6 d-flex">
+                        <div className="mt-5 event-card w-100 text-center">
+                            <div className="mb-2"><i className="bi-globe fs-1 text-primary"></i></div>
+                            <h3 className="h4 mb-2">Feed My Starving Children</h3>
+                            <img src={FMSC} className="rounded img-fluid event-img" alt="Rights to LakeView Technology Academy" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+
+                    <div className="col-lg-6 col-md-6 d-flex">
+                        <div className="mt-5 event-card w-100 text-center">
+                            <div className="mb-2"><i className="bi-heart fs-1 text-primary"></i></div>
+                            <h3 className="h4 mb-2">Induction Ceremony</h3>
+                            <img src={induction} className="rounded img-fluid event-img" alt="Rights to LakeView Technology Academy" />
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+      
 
     );
 }
 
 export default Events;
+
