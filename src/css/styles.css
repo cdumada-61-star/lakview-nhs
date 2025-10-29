@@ -10993,3 +10993,11 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+.top-nav{
+  position: relative; /* or 'fixed' if you want it always visible at top */
+  z-index: 1000;
+}
+main.page-center {
+  padding-top: 0.5rem; /* ensure main content doesn't sit under nav */
+}
