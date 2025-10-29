@@ -6,6 +6,7 @@ function Events(){
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">At Your Service</h2>
                 <hr class="divider" />
+                <h4 class="text-center mt-1">LakeView NHS's Service Events</h4>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">

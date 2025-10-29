@@ -6,6 +6,8 @@ import Officers from './components/pages/Officers'
 import Events from './components/pages/Events'
 import Home from './components/pages/Home';
 
+import OfficerData from './models/officers-data.js';
+
 function App() {
 
   return (
@@ -22,7 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/officers" element={<Officers />} />
+        <Route path="/officers" element={<Officers officerData = {OfficerData}/>} />
       </Routes>
       </main>
     </BrowserRouter>

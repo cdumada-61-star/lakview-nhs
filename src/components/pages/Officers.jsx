@@ -1,26 +1,61 @@
 import React, {useState} from 'react';
 
-function Officers(){
+import TableHeaders from '../../models/table-header-data.js'
 
-    const [isOpen, setIsOpen] = useState(false);
+function Officers(props){
 
-    const toggleDropdown = () => setIsOpen(!isOpen);
+    const [officerData, setOfficerData] = useState(props.officerData);
+
+
+    const deleteYear = (id) =>{
+        alert(id);
+        console.log(id)
+
+        const updatedYears = officerData.filter(year => year.id !== id);
+
+         setOfficerData(updatedYears);
+        
+}
+
+   
 
     return (
-        <section class="page-section bg-dark container-fluid text-white">
-            <div class="container text-center">
-                <h2 class="mb-4">Past and Current Officer Teams!</h2>
-                  <button onClick={toggleDropdown}>View Options</button>
-          {isOpen && (
-            <ul className="container-fluid w-25 list-unstyled">
-              <li>Option A</li>
-              <li>Option B</li>
-              <li>Option C</li>
-            </ul>
-          )}
-            </div>
-        </section>
+        <div>
+
+            <h1>These are the past and current officer teams!</h1>
+            <br/>
+            <br/>
+
+            <table className="table table-striped">
+                <thead>
+                    <tr>
+                        {TableHeaders.map((curHeading, id) =>(
+                            <th key={id}>{curHeading}</th>
+                        ))}
+                    </tr>
+                </thead>
+                {officerData.map((curYear) =>(
+                    <tr key={curYear.id}>
+                        <td>{curYear.id}</td>
+                        <td>{curYear.president}</td>
+                        <td>{curYear.vicePresident}</td>
+                        <td>{curYear.secretary}</td>
+                        <td>{curYear.treasurer}</td>
+                        <td>{curYear.parliamentarian}</td>
+                        <td>{curYear.historian}</td>
+
+                        <td>
+                            <a type="button" className="btn btn-danger btn-sm" onClick={() => deleteYear(curYear.id)}>Delete</a>
+                        </td>
+
+                    </tr>
+                ))}
+
+
+            </table>
+        </div>
     );
 }
+
 
 export default Officers;
