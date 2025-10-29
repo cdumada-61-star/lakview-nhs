@@ -99,7 +99,7 @@ function Contact() {
 
                 {/* Submit Button */}
                 <div className="d-grid">
-                  <button className="btn btn-primary btn-xl disabled" id="submitButton" type="submit">
+                  <button className="btn btn-primary btn-xl" id="submitButton" type="submit">
                     Submit
                   </button>
                 </div>
