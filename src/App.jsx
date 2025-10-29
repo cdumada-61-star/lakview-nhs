@@ -10,9 +10,11 @@ function App() {
 
   return (
     <BrowserRouter>
-      <nav>
+    <div className="px-10 mx-auto my-4">
+      <nav className="top-nav">
         <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> | <Link to="/events">Events</Link> | <Link to="/officers">Officers</Link>
       </nav>
+    </div>
 
       <main className='page-center'>
       <Routes>
