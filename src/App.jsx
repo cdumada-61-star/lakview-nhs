@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link>
+        <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> | <Link to="/events">Events</Link> | <Link to="/officers">Officers</Link>
       </nav>
 
       <main className='page-center'>
